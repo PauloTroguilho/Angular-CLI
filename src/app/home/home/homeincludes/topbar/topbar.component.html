@@ -1,0 +1,36 @@
+<!--component html goes here -->
+<!--component html goes here -->
+<mat-toolbar color="primary" style="background-color:#34495E;">
+
+
+    <mat-toolbar-row>
+        <!-- <span><img src="https://www.arduino.cc/arduino_logo.png" height="25px" width="25px" > </span> -->
+        <span>Paulo Troguilho</span>
+
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon">verified_user</mat-icon>
+        <mat-icon class="example-icon">favorite</mat-icon>
+        <mat-icon class="example-icon">delete</mat-icon>
+    </mat-toolbar-row>
+
+</mat-toolbar>
+<mat-toolbar-row>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+                      <mat-icon>dialpad</mat-icon>
+                      <span>Open Source Hardware</span>
+                    </button>
+        <button mat-menu-item disabled>
+                      <mat-icon>voicemail</mat-icon>
+                      <span>Hardware de código aberto</span>
+                    </button>
+        <button mat-menu-item>
+                      <mat-icon>notifications_off</mat-icon>
+                      <span>Desenvolvimento</span>
+                    </button>
+    </mat-menu>
+</mat-toolbar-row>
