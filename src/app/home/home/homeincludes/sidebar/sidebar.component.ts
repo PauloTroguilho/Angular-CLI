@@ -1,4 +1,7 @@
 import { Component, OnInit, Inject, forwardRef, Output, EventEmitter } from '@angular/core';
+import { Routes, RouterModule, RouterLink, ActivatedRoute,Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
     moduleId: module.id,
@@ -29,3 +32,4 @@ export class SidebarComponent implements OnInit {
     
    
 }
+export class AppComponent {}
